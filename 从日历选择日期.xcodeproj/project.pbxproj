@@ -15,6 +15,9 @@
 		05F865671E01292D002E6A30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F865651E01292D002E6A30 /* LaunchScreen.storyboard */; };
 		05F865721E01292D002E6A30 /* _______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F865711E01292D002E6A30 /* _______Tests.m */; };
 		05F8657D1E01292D002E6A30 /* _______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F8657C1E01292D002E6A30 /* _______UITests.m */; };
+		113FB62F4499E0AE51BE62C0 /* libPods-从日历选择日期.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CA826252335BD8EC6E2D9E /* libPods-从日历选择日期.a */; };
+		4FA0E2303A1CDAF60C618475 /* libPods-从日历选择日期UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F367641F1C10EB99AA4632A /* libPods-从日历选择日期UITests.a */; };
+		C382EC93A704ABA4CE27B609 /* libPods-从日历选择日期Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF34E7646B9613096C313C0 /* libPods-从日历选择日期Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +49,20 @@
 		05F865661E01292D002E6A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05F865681E01292D002E6A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05F8656D1E01292D002E6A30 /* 从日历选择日期Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "从日历选择日期Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		05F865711E01292D002E6A30 /* _______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_______Tests.m"; sourceTree = "<group>"; };
+		05F865711E01292D002E6A30 /* _______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _______Tests.m; sourceTree = "<group>"; };
 		05F865731E01292D002E6A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05F865781E01292D002E6A30 /* 从日历选择日期UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "从日历选择日期UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		05F8657C1E01292D002E6A30 /* _______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_______UITests.m"; sourceTree = "<group>"; };
+		05F8657C1E01292D002E6A30 /* _______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _______UITests.m; sourceTree = "<group>"; };
 		05F8657E1E01292D002E6A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F367641F1C10EB99AA4632A /* libPods-从日历选择日期UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-从日历选择日期UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA0A3514E751A7EE150B0D8 /* Pods-从日历选择日期Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-从日历选择日期Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-从日历选择日期Tests/Pods-从日历选择日期Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		51CA826252335BD8EC6E2D9E /* libPods-从日历选择日期.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-从日历选择日期.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61538EF3B2EC9CA58D9BC8B2 /* Pods-从日历选择日期.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-从日历选择日期.debug.xcconfig"; path = "Pods/Target Support Files/Pods-从日历选择日期/Pods-从日历选择日期.debug.xcconfig"; sourceTree = "<group>"; };
+		B75B3687D3CD3C9B0CAF8597 /* Pods-从日历选择日期.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-从日历选择日期.release.xcconfig"; path = "Pods/Target Support Files/Pods-从日历选择日期/Pods-从日历选择日期.release.xcconfig"; sourceTree = "<group>"; };
+		B80832A03E2B64201A8BF045 /* Pods-从日历选择日期UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-从日历选择日期UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-从日历选择日期UITests/Pods-从日历选择日期UITests.release.xcconfig"; sourceTree = "<group>"; };
+		E5C5CE02E1E5A9245FCE525D /* Pods-从日历选择日期UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-从日历选择日期UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-从日历选择日期UITests/Pods-从日历选择日期UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FAF34E7646B9613096C313C0 /* libPods-从日历选择日期Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-从日历选择日期Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB704854920CD28BEA8A914B /* Pods-从日历选择日期Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-从日历选择日期Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-从日历选择日期Tests/Pods-从日历选择日期Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113FB62F4499E0AE51BE62C0 /* libPods-从日历选择日期.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C382EC93A704ABA4CE27B609 /* libPods-从日历选择日期Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA0E2303A1CDAF60C618475 /* libPods-从日历选择日期UITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				05F865701E01292D002E6A30 /* 从日历选择日期Tests */,
 				05F8657B1E01292D002E6A30 /* 从日历选择日期UITests */,
 				05F865551E01292C002E6A30 /* Products */,
+				C803833965DD564B3D79730C /* Pods */,
+				DE5FA833F2DE0BF1E9128A10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +157,29 @@
 			path = "从日历选择日期UITests";
 			sourceTree = "<group>";
 		};
+		C803833965DD564B3D79730C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61538EF3B2EC9CA58D9BC8B2 /* Pods-从日历选择日期.debug.xcconfig */,
+				B75B3687D3CD3C9B0CAF8597 /* Pods-从日历选择日期.release.xcconfig */,
+				3FA0A3514E751A7EE150B0D8 /* Pods-从日历选择日期Tests.debug.xcconfig */,
+				FB704854920CD28BEA8A914B /* Pods-从日历选择日期Tests.release.xcconfig */,
+				E5C5CE02E1E5A9245FCE525D /* Pods-从日历选择日期UITests.debug.xcconfig */,
+				B80832A03E2B64201A8BF045 /* Pods-从日历选择日期UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE5FA833F2DE0BF1E9128A10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51CA826252335BD8EC6E2D9E /* libPods-从日历选择日期.a */,
+				FAF34E7646B9613096C313C0 /* libPods-从日历选择日期Tests.a */,
+				2F367641F1C10EB99AA4632A /* libPods-从日历选择日期UITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05F865811E01292D002E6A30 /* Build configuration list for PBXNativeTarget "从日历选择日期" */;
 			buildPhases = (
+				9D6860001338E7592DCB0BFE /* [CP] Check Pods Manifest.lock */,
 				05F865501E01292C002E6A30 /* Sources */,
 				05F865511E01292C002E6A30 /* Frameworks */,
 				05F865521E01292C002E6A30 /* Resources */,
+				1BE5738B93692EF55D507761 /* [CP] Embed Pods Frameworks */,
+				CA23E034D35FAEBE63C47C62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05F865841E01292D002E6A30 /* Build configuration list for PBXNativeTarget "从日历选择日期Tests" */;
 			buildPhases = (
+				A79F7DC7C35CB98066263E4C /* [CP] Check Pods Manifest.lock */,
 				05F865691E01292D002E6A30 /* Sources */,
 				05F8656A1E01292D002E6A30 /* Frameworks */,
 				05F8656B1E01292D002E6A30 /* Resources */,
+				C1BE9BFFE30D44BBAE34D25E /* [CP] Embed Pods Frameworks */,
+				3E35C389EF98F685550CDA2B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05F865871E01292D002E6A30 /* Build configuration list for PBXNativeTarget "从日历选择日期UITests" */;
 			buildPhases = (
+				158F76F01BB3D5BA5E908314 /* [CP] Check Pods Manifest.lock */,
 				05F865741E01292D002E6A30 /* Sources */,
 				05F865751E01292D002E6A30 /* Frameworks */,
 				05F865761E01292D002E6A30 /* Resources */,
+				592F30FF76204B36F3F625E5 /* [CP] Embed Pods Frameworks */,
+				F4D465C2302D0C1B876B9DD7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +319,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		158F76F01BB3D5BA5E908314 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1BE5738B93692EF55D507761 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-从日历选择日期/Pods-从日历选择日期-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E35C389EF98F685550CDA2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-从日历选择日期Tests/Pods-从日历选择日期Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		592F30FF76204B36F3F625E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-从日历选择日期UITests/Pods-从日历选择日期UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D6860001338E7592DCB0BFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A79F7DC7C35CB98066263E4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1BE9BFFE30D44BBAE34D25E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-从日历选择日期Tests/Pods-从日历选择日期Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA23E034D35FAEBE63C47C62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-从日历选择日期/Pods-从日历选择日期-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4D465C2302D0C1B876B9DD7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-从日历选择日期UITests/Pods-从日历选择日期UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		05F865501E01292C002E6A30 /* Sources */ = {
@@ -423,6 +610,7 @@
 		};
 		05F865821E01292D002E6A30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61538EF3B2EC9CA58D9BC8B2 /* Pods-从日历选择日期.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SSF7PP8DWA;
@@ -435,6 +623,7 @@
 		};
 		05F865831E01292D002E6A30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B75B3687D3CD3C9B0CAF8597 /* Pods-从日历选择日期.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SSF7PP8DWA;
@@ -447,6 +636,7 @@
 		};
 		05F865851E01292D002E6A30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FA0A3514E751A7EE150B0D8 /* Pods-从日历选择日期Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = SSF7PP8DWA;
@@ -460,6 +650,7 @@
 		};
 		05F865861E01292D002E6A30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB704854920CD28BEA8A914B /* Pods-从日历选择日期Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = SSF7PP8DWA;
@@ -473,6 +664,7 @@
 		};
 		05F865881E01292D002E6A30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5C5CE02E1E5A9245FCE525D /* Pods-从日历选择日期UITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = SSF7PP8DWA;
 				INFOPLIST_FILE = "从日历选择日期UITests/Info.plist";
@@ -485,6 +677,7 @@
 		};
 		05F865891E01292D002E6A30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B80832A03E2B64201A8BF045 /* Pods-从日历选择日期UITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = SSF7PP8DWA;
 				INFOPLIST_FILE = "从日历选择日期UITests/Info.plist";
