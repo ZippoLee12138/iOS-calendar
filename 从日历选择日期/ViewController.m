@@ -19,8 +19,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierChinese];
     
     
+    [calendar dateByAddingComponents:<#(nonnull NSDateComponents *)#> toDate:<#(nonnull NSDate *)#> options:<#(NSCalendarOptions)#>];
+    
+    
+    NSDateComponents *dateComponentForDate = [[NSDateComponents alloc] init];
+    dateComponentForDate.calendar = calendar;
+    dateComponentForDate.year = 2017;
+    dateComponentForDate.month = 1;
+    
+    [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:[NSDate date]];
+    
+//    [calendar enumerateDatesStartingAfterDate:[NSDate date] matchingComponents:dateComponentForDate options:NSCalendarWrapComponents usingBlock:^(NSDate * _Nullable date, BOOL exactMatch, BOOL * _Nonnull stop) {
+//        NSLog(@"%@",date);
+//    }];
     
 }
 
