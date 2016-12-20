@@ -1,0 +1,25 @@
+//
+//  CalendarCollectionViewCell.m
+//  从日历选择日期
+//
+//  Created by lzb on 2016/12/20.
+//  Copyright © 2016年 lzb的工程. All rights reserved.
+//
+
+#import "CalendarCollectionViewCell.h"
+
+@interface CalendarCollectionViewCell ()
+
+@property (weak, nonatomic) IBOutlet UILabel *dayLabel;
+
+
+@end
+
+@implementation CalendarCollectionViewCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+}
+
+@end
