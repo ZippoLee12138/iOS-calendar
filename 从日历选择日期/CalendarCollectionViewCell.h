@@ -10,4 +10,6 @@
 
 @interface CalendarCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, strong) NSDate *calendarDate;
+
 @end

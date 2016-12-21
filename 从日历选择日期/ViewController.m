@@ -17,6 +17,7 @@
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 
+@property (nonatomic, strong) NSDate *currentDate;
 
 @end
 
@@ -34,12 +35,33 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     CalendarCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CALENDAR_CELL_ID forIndexPath:indexPath];
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    
+    
+    NSDateComponents *firstDateOfMonth = [[NSDateComponents alloc] init];
+    firstDateOfMonth.year = 2016;
+    firstDateOfMonth.month = 12;
+    firstDateOfMonth.day = 1;
+    
+    NSDate *firstDate = [calendar dateFromComponents:firstDateOfMonth];
+    
+    NSDate *myDate = [calendar dateByAddingComponents:((^{
+        
+        NSDateComponents *dateComponents = [NSDateComponents new];
+        dateComponents.day = indexPath.item;
+        return dateComponents;
+        
+    })()) toDate:firstDate options:0];
+    
+    cell.calendarDate = myDate;
+    
 //    cell.backgroundColor = [UIColor greenColor];
     return cell;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 30;
+    return [[NSCalendar currentCalendar] rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:self.currentDate].length;
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
@@ -60,10 +82,10 @@
     
     
 //    [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//       
+       
 //        make.left.right.top.equalTo(reusableView);
 //        make.height.mas_equalTo(reusableView.mas_height).multipliedBy(0.5);
-//        
+        
 //    }];
     
     
@@ -146,11 +168,35 @@
 }
 
 
+
+- (NSDate*)firstDayOfMonth{
+    
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy"];
+    [dateFormatter setDateFormat:@"MM"];
+    [dateFormatter setDateFormat:@"dd"];
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    
+    NSDateComponents *firstDateOfMonth = [[NSDateComponents alloc] init];
+    firstDateOfMonth.year = 2016;
+    firstDateOfMonth.month = 12;
+    firstDateOfMonth.day = 1;
+    
+   return [calendar dateFromComponents:firstDateOfMonth];
+    
+}
+
+
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
+    [self createFields];
     [self setUpCollectionView];
     
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierChinese];
@@ -159,7 +205,7 @@
    NSDate *myDate = [calendar dateByAddingComponents:((^{
         
         NSDateComponents *dateComponents = [NSDateComponents new];
-        dateComponents.month = 1;
+        dateComponents.month = 0;
         return dateComponents;
         
     })()) toDate:[NSDate date] options:0];
@@ -179,6 +225,12 @@
     
 }
 
+- (void)createFields{
+    
+    self.currentDate = [NSDate date];
+    
+    
+}
 
 - (void)setUpCollectionView{
     

@@ -15,7 +15,19 @@
 
 @end
 
+
 @implementation CalendarCollectionViewCell
+
+
+- (void)setCalendarDate:(NSDate *)calendarDate{
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *component = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:calendarDate];
+    
+    _dayLabel.text = [NSString stringWithFormat:@"%ld",(long)component.day];
+    
+}
+
 
 - (void)awakeFromNib {
     [super awakeFromNib];
